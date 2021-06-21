@@ -1,0 +1,282 @@
+input#check
+{
+  -webkit-appearance:checkbox;
+}
+body{
+    overflow-x: hidden;
+}
+hr.new1{
+  border-top: 1px dashed rgb(209, 208, 208);
+}
+.headtop{
+    padding-left: 250px;
+    overflow-x: hidden;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    z-index: 1;
+    position: fixed;
+    left: 0px;
+    background-color: #4e2727;
+    overflow-x: hidden;
+    transition: 0.4s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+#ham{
+    margin-left: 200px;
+    z-index: 1;
+    padding: 10px;
+}
+#hidham{
+    padding-left: 20px;
+    display: none;
+}
+.callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.calloutblue {
+  padding: 20px;
+  margin: 20px 0;
+  border: 0px solid rgb(207, 61, 129);
+  border-left-width: 5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 0 2px 0 rgba(0, 0, 0, 0.19);
+}
+#smacallout{
+  width: 40rem;
+}
+.nav-pills .nav-link{
+  color: #9e2929 !important;
+}
+.nav-pills .nav-link.active {
+  color: #ffffff !important;
+  background-color: #9e2929 !important;
+}
+.calloutblue:hover{
+  border: 0px solid rgb(255, 251, 6);
+  border-left-width: 5px;
+  cursor: pointer;
+}
+creport:hover{
+  background-blend-mode:lighten ;
+}
+.callout-top {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.callout-topyellow {
+  padding: 20px;
+  margin: 10px 0;
+  border: 0px solid rgb(250, 214, 10);
+  border-top-width: 5px;
+  border-radius: 3px;
+}
+#main{
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    transition: 0.5s;
+    align-self: left;
+    overflow-x: hidden;
+    position: relative;
+    padding: 10px;
+    padding-left: 260px;
+    height: auto;
+    min-height: 100%;
+    display: block;
+    height: 100%;
+    
+}
+#footer{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    padding-left: 250px;
+    z-index: 1;
+    text-align: center;
+}
+.fas{
+    cursor: pointer;
+  }
+.sidebar .sidetext {
+    padding: 8px 8px 8px 32px;
+    width: 250px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    position: relative;
+  }
+.sidebar a{
+    color:#ffffff;
+    box-sizing: border-box;
+  }
+.sidebar a:hover {
+    background-color: #ffffff ;
+    color: #880d0d;
+    text-decoration: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .sidebar a:hover >  i#arrow{
+    transform: rotate(90deg);
+    margin-top: 5px;
+
+  }
+  #propic{
+    object-fit: cover;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgb(144, 82, 82);
+    border-radius: 50% 50% 50% 50%;
+    border-style: inset;
+  }
+  #propic:hover{
+    border-style: outset;
+  }
+.sidebar ui li {
+
+    list-style: none;
+  }
+
+  .sidebar i{
+    padding-right: 10px;
+
+  }
+
+    label #sidebar_btn{
+      color: #fff;
+      cursor: pointer;
+      left:0;
+      font-size: 20px;
+      transition: 0.5s;
+      transition-property: color;
+    }
+    label #sidebar_btn:hover{
+      color: #19B3D3;
+    }
+    .imgprofile {
+      padding: 10px;
+      margin-left: 190px;
+      vertical-align: middle;
+      width: 60px;
+      height: 60px;
+      border-color: #f1f1f1;
+    }
+  #check:checked ~ .sidebar{
+    left: -190px;
+  }
+  #check:checked ~ #main{
+    padding-left: 70px;
+  }
+  #check:checked ~ .headtop{
+    padding-left: 60px;
+  }
+  #check:checked ~ div #cpropic{
+    margin-left: 0;
+    left: 250px;
+    font-size: 18px;
+    padding-left: 33px;
+
+  }
+  #check:checked ~ div #propic{
+    width: 40px;
+    height: 40px;
+    margin-left: 155px;
+    left: 250px;
+    font-size: 18px;
+    border: 0px solid rgb(144, 82, 82);
+  }
+  #check:checked ~ div ui li .sidetext span{
+    display: none;
+    transition: 0.5s;
+  }
+  #check:checked ~ div ui li .sidetext{
+    width: 80px;
+    margin-left: 0;
+    left: 177px;
+    font-size: 18px;
+    padding-left: 33px;
+  }
+
+
+.creport{
+    color: white;
+    padding: 10px;
+}
+.cicon{
+    float: right;
+}
+@media screen and (max-width: 600px) {
+  .headtop{
+    padding-left: 0px;
+    overflow-x: hidden;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+#smacallout{
+  width: 100%;
+}
+.sidebar .dsidetext span{
+  padding: 8px 8px 8px 32px;
+  width: 250px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+}
+#main{
+    padding-left: 10px;
+}
+#ham{
+    display: block;
+}
+#hidham{
+    display: block;
+}
+.sidebar{
+    width: 0;
+}
+#check:checked ~ .sidebar{
+    width: 250px;
+    left: 0;
+  }
+#check:checked ~ div ui li .sidetext span{
+    display: inline-block;
+  }
+
+#check:checked ~ div ui li .sidetext{
+    width: 250px;
+    margin-left: 0;
+    left: 0;
+    font-size: 16px;
+  }
+
+  #check:checked ~ div #propic{
+    margin-left: -30px;
+    object-fit: cover;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgb(144, 82, 82);
+    border-radius: 50% 50% 50% 50%;
+    border-style: inset;
+  }
+}

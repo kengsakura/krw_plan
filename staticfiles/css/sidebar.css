@@ -1,0 +1,246 @@
+input[type=checkbox]
+{
+  -webkit-appearance:checkbox;
+}
+#nav topnavi{
+  left: 60px;
+}
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: -190px;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #mySidebar:hover{
+    left: 0px;
+    margin-left: 0;
+    width:250px;
+    font-size: 18px;
+
+  }
+  div #addon-wrapping{
+    background-color: #333333;
+    color: white;
+  }
+  .brandtop{
+    transition: 0.5s;
+  }
+  .fas{
+    cursor: pointer;
+  }
+  .sidebar .sidetext {
+    padding: 8px 8px 8px 32px;
+    width: 80px;
+    margin-left: 180px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    position: relative;
+  }
+  .sidebar a{
+    color:#d9d9d9;
+    box-sizing: border-box;
+  }
+  .sidebar a:hover {
+    background-color:  #1a1a1a;
+    color: #d9d9d9;
+    text-decoration: none;
+  }
+  .sidebar ui li {
+    border-bottom:1px solid #2b2626;
+    border-top:1px solid #2b2626;
+    list-style: none;
+  }
+  .sidebar a span{
+    display: none;
+  }
+  #mySidebar:hover >  #sidebarmenu .sidetext{
+    width: 250px;
+    left: 0;
+    margin-left: 0;
+
+  }
+  #mySidebar:hover >  #sidebarmenu .sidetext span{
+    display: inline;
+  }
+  #mySidebar:hover >  #imgprofile{
+    width: 120px;
+    height: 120px;
+    margin-left: 60px;
+  }
+  #mySidebar:hover >  #logokrw{
+    display: none;
+  }
+  #mySidebar:hover >  #logoxl{
+    display: block;
+  }
+.sidebar i{
+  padding-right: 10px;
+}
+  label #sidebar_btn{
+    color: #fff;
+    cursor: pointer;
+    left:0;
+    font-size: 20px;
+    transition: 0.5s;
+    transition-property: color;
+  }
+  label #sidebar_btn:hover{
+    color: #19B3D3;
+  }
+  .imgprofile {
+    padding: 10px;
+    margin-left: 190px;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-color: #f1f1f1;
+  }
+#logoxl{
+width: 80%;
+display: none;
+padding: 15px;
+margin-left: 20px;
+}
+#logokrw{
+  width: 50px;
+  margin-left: 195px;
+  margin-top: 5px;
+}
+  #main{
+  margin-left: 60px;
+  height: 100%;
+  transition: 0.4s;
+}
+
+  nav{
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  #logotop{
+    margin-left: 60px;
+    color:white;
+      }
+#cardbody{
+    width: 100%;
+}
+  #navtop{
+    background-color: #bb0000;
+  }
+  table td {
+    word-wrap: break-word;
+    }
+
+.dataacti span{
+  margin-left: 10px;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ div ui li .sidetext span{
+  display: inline;
+}
+#check:checked ~ div ui li .sidetext{
+  width: 250px;
+  margin-left: 0;
+  left: 0;
+  font-size: 16px;
+}
+#check:checked ~ nav div #logotop{
+  margin-left: 250px;
+}
+#check:checked ~ .sidebar #imgprofile{
+  width: 120px;
+  height: 120px;
+  margin-left: 60px;
+}
+#check:checked ~ .sidebar #logokrw{
+  display: none;
+}
+#check:checked ~ .sidebar #logoxl{
+  display: block;
+}
+
+
+div #profile h6 span{
+  color: #1a1a1a;
+  font-weight: normal;
+  margin-left: 10px;
+}
+div #profile h6{
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .sidebar a {font-size: 18px;}
+
+  #main{
+    margin-left: 0;
+    width: 100%;
+    transition: 0.4s;
+    min-height: 100%;
+  }
+  #logotop{
+    margin-left: 0;
+    color:white;
+      }
+      #check:checked ~ .sidebar{
+        left: 0;
+      }
+      #check:checked ~ div ui li .sidetext span{
+        display: inline;
+      }
+      #check:checked ~ div ui li .sidetext{
+        width: 250px;
+        margin-left: 0;
+        left: 0;
+        font-size: 16px;
+      }
+      #check:checked ~ nav div #logotop{
+        margin-left: 250px;
+      }
+      #check:checked ~ .sidebar #imgprofile{
+        width: 120px;
+        height: 120px;
+        margin-left: 60px;
+      }
+      #check:checked ~ .sidebar #logokrw{
+        display: none;
+      }
+      #check:checked ~ .sidebar #logoxl{
+        display: block;
+      }
+      .dataacti p{
+        font-size: 80%;
+      }
+      #tableuse{
+        font-size: 80%;
+      }
+      div.card-body h5 strong{
+        font-size: 80%;
+      }
+}
